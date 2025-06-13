@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
-  const { price, orderId } = req.body;
+ const { price, orderId, pay_currency } = req.body;
 
   // Notionの動画視聴ページURL（1本目）
   const notionURL = "https://kinatan.notion.site/your-first-video-url";
