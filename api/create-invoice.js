@@ -20,7 +20,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         price_amount: price,
         price_currency: 'jpy',
-        pay_currency: 'usdt',
+        pay_currency: 'usdttrx',
         order_id: orderId,
         success_url: notionURL,
       }),
